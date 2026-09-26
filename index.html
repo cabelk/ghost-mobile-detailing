@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Book | Ghost Mobile Detailing</title>
+  <meta name="description" content="Build your Ghost Premium Detail and continue to secure online booking.">
+  <meta name="robots" content="noindex,follow"><meta name="theme-color" content="#05070a">
+  <link rel="icon" href="/assets/ghost-mark.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css">
+</head>
+<body class="booking-page">
+<a class="skip-link" href="#main">Skip to booking</a>
+<header class="site-header"><div class="container nav-wrap"><a class="brand" href="/" aria-label="Ghost Mobile Detailing home"><img src="/assets/ghost-mark.svg" alt=""><span>Ghost<small>Mobile Detailing</small></span></a><a class="btn btn-ghost" href="/">← Back to site</a></div></header>
+<main class="booking-main" id="main"><div class="container">
+  <div class="booking-intro"><span class="eyebrow">Build your detail</span><h1>Start here. Finish with live availability.</h1><p>This page uses Ghost-owned service IDs and pricing. Your selections are handed off to the configured booking provider only when you continue.</p></div>
+  <div class="booking-layout">
+    <form class="booking-card" id="booking-form" novalidate>
+      <fieldset class="fieldset"><legend>1. Choose your vehicle class</legend><div class="choice-grid">
+        <label class="radio-card"><input type="radio" name="vehicleClass" value="standard" checked><span class="radio-copy"><strong>Car / Crossover</strong><small>$160</small></span></label>
+        <label class="radio-card"><input type="radio" name="vehicleClass" value="large"><span class="radio-copy"><strong>Large Truck / SUV</strong><small>$240</small></span></label>
+      </div></fieldset>
+      <fieldset class="fieldset"><legend>2. Add services</legend><div class="addon-list" id="addon-options"></div></fieldset>
+      <fieldset class="fieldset"><legend>3. Service ZIP</legend><label class="input-label" for="postalCode">ZIP code <small>Used for the booking-provider handoff and current service-area rules.</small><input class="text-input" id="postalCode" name="postalCode" inputmode="numeric" autocomplete="postal-code" maxlength="10" placeholder="76102" required></label></fieldset>
+      <button class="btn btn-primary btn-lg" type="submit">Continue to secure booking →</button><div class="status" id="booking-status" role="status" aria-live="polite"></div>
+      <p class="fineprint">Starting-price estimate only. Final availability, service-area rules, deposits, taxes, travel fees, special-condition approval, and appointment terms are controlled by the connected booking provider.</p>
+    </form>
+    <aside class="booking-card estimate" aria-label="Booking estimate"><span class="eyebrow">Estimated start</span><div class="estimate-price" id="estimate-total">$160</div><div class="estimate-summary" id="estimate-summary">Car / Crossover</div><p class="estimate-note">No payment or personal contact information is collected on this page. That remains with the booking provider.</p><a class="btn btn-ghost" data-phone-link href="tel:+16824589684">Prefer to call? <span data-phone-display>(682) 458-9684</span></a></aside>
+  </div>
+  <section class="demo-panel" id="demo-panel" hidden><h3>Front-end demo mode</h3><p>Your Ghost-owned booking summary is ready. Connect any booking platform by changing <code>js/config.js</code>; the public site and this selection flow do not need to change.</p><p class="demo-summary" id="demo-summary"></p><div class="hero-actions"><button class="btn btn-secondary" id="copy-summary" type="button">Copy estimate</button><a class="btn btn-primary" data-sms-link href="sms:+16824589684">Text Ghost</a></div></section>
+  <section class="embed-panel" id="embed-panel" hidden><h3>Secure booking</h3><iframe class="booking-frame" id="booking-frame" title="Booking provider"></iframe></section>
+</div></main>
+<script src="/data/services.js"></script><script src="/js/config.js"></script><script src="/js/providers/provider-registry.js"></script><script src="/js/providers/demo.js"></script><script src="/js/providers/redirect.js"></script><script src="/js/providers/embed.js"></script><script src="/js/site.js"></script><script src="/js/booking.js"></script>
+</body></html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+<title id="title">Sport sedan silhouette</title><desc id="desc">A clean abstract side profile of a modern car.</desc>
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#ffffff" stop-opacity=".92"/><stop offset="1" stop-color="#dbeafe" stop-opacity=".36"/></linearGradient></defs>
+<path d="M90 248c22-55 68-91 139-112l104-23 77-55c26-19 54-28 84-28h113c45 0 87 13 123 39l74 54 62 20c30 10 48 30 52 61l2 21H78l12-7Z" fill="url(#g)"/>
+<path d="M313 118l84-58c22-15 46-22 72-22h119c36 0 66 8 95 29l67 48-437 3Z" fill="#0b1220" opacity=".88"/>
+<path d="M87 223h729" stroke="#60a5fa" stroke-width="6" stroke-linecap="round" opacity=".85"/>
+<circle cx="245" cy="235" r="57" fill="#090d14" stroke="#dbeafe" stroke-width="10"/><circle cx="245" cy="235" r="24" fill="#2563eb" opacity=".55"/>
+<circle cx="673" cy="235" r="57" fill="#090d14" stroke="#dbeafe" stroke-width="10"/><circle cx="673" cy="235" r="24" fill="#2563eb" opacity=".55"/>
+</svg>
